@@ -1,32 +1,29 @@
 """
 Simple Calculator Program
 Author: David Olawuyi
-Description: A menu- driven calculator that performs basic arithmetic operations
-""" 
+Description: A menu-driven calculator that performs basic arithmetic operations
+"""
 
-def add(Num1, Num2):
-    """Add two numbers and return the result"""
-    return Num1 + Num2
+# Arithmetic functions
+def add(num1, num2):
+    return num1 + num2
 
-def subtract(Num1, Num2):
-    """Subtract second number from first number and return the result"""
-    return Num1 - Num2
+def subtract(num1, num2):
+    return num1 - num2
 
-def multiply(Num1, Num2):
-    """Multiply two numbers and return the result"""
-    return Num1 * Num2
+def multiply(num1, num2):
+    return num1 * num2
 
-def divide(Num1, Num2):
-    """Divide first number by second number and print the result"""
-    if Num2 == 0:
-        return "Error: Cannot divide by zero!"
-    return Num1 / Num2 
+def divide(num1, num2):
+    if num2 == 0:
+        return "Error: Cannot divide by zero"
+    return num1 / num2
 
+# Display menu
 def display_menu():
-    """Display the calculator menu options"""
-    print("\n" + "="*40)
+    print("\n" + "=" * 40)
     print("     SIMPLE CALCULATOR")
-    print("="*40)
+    print("=" * 40)
     print("1. Add")
     print("2. Subtract")
     print("3. Multiply")
@@ -34,74 +31,63 @@ def display_menu():
     print("5. Exit")
     print("=" * 40)
 
+# Get user numbers
 def get_numbers():
-    """Get two numbers from the user with error handling"""
     try:
-        Num1 = float(input("Enter the first number: "))
-        Num2 = float(input("Enter the second number: "))
-        return Num1, Num2
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        return num1, num2
     except ValueError:
-        print("Error: Please, enter the valid numbers!")
+        print("Error: Please enter valid numbers!")
         return None, None
-    
+
+# Main program
 def main():
-    """Main program function"""
-    print("Welcome to the simple calculator!")
-    
+    print("Welcome to the Simple Calculator!")
+
     while True:
         display_menu()
+        choice = input("Please select an option (1-5): ").strip()
 
-        try:
-            Choice = input("Please select an option (1-5): ").strip()
+        if choice == '5':
+            print("\nThank you for using the calculator. Goodbye!")
+            break
 
-            if Choice == '5':
+        elif choice in ['1', '2', '3', '4']:
+            num1, num2 = get_numbers()
+
+            if num1 is None or num2 is None:
+                continue
+
+            if choice == '1':
+                result = add(num1, num2)
+                operation = "Addition"
+                symbol = '+'
+
+            elif choice == '2':
+                result = subtract(num1, num2)
+                operation = "Subtraction"
+                symbol = '-'
+
+            elif choice == '3':
+                result = multiply(num1, num2)
+                operation = "Multiplication"
+                symbol = '*'
+
+            elif choice == '4':
+                result = divide(num1, num2)
+                operation = "Division"
+                symbol = '/'
+
+            print(f"\n{operation} Result:")
+            print(f"{num1} {symbol} {num2} = {result}")
+
+            again = input("\nDo you want to calculate again? (y/n): ").strip().lower()
+            if again not in ['y', 'yes']:
                 print("\nThank you for using the calculator. Goodbye!")
                 break
-            
-            elif Choice in ['1,', '2', '3', '4']:
-                Num1, Num2 = get_numbers()
-                if Num1 is not None and Num2 is not None:
-                    if Choice == '1':
-                        Result = add(Num1, Num2)
-                        Operation = "Addition"
-                        Symbol = "+"
-                    elif Choice == '2':
-                        Result = subtract(Num1, Num2)
-                        Operation ="Subtraction"
-                        Symbol = '-'
-                    elif Choice == '3':
-                        Result = multiply(Num1, Num2)
-                        Operation = "Multiplication"
-                        Symbol = '*'
-                    elif Choice ==  '4':
-                        Result = divide(Num1, Num2)
-                        Operation = "Division"
-                        Symbol = "/"
-                        print(f"\n{Operation}Result:")
-                        print(f"{Num1} {Symbol} {Num2} = {Result}")
 
-                        continue_calc = input("\nwould you like to perform another calculation? (y/n): ").strip().lower()
-                        if continue_calc not in ['y', 'yes']:
-                            print("\nThank you for using the calculator. Goodbye!")
-                            break
-                        else:
-                            print("Error: Invalid option! Please, select a number between 1-5.")
-                            
-        except KeyboardInterrupt:
-                        print("\n\nProgram interrupted. Goodbye!")
-                        break
-        except Exception as e:
-                            print(f"An unexpected error occured: {e}")
+        else:
+            print("Error: Invalid option! Please select between 1 and 5.")
 if __name__ == "__main__":
-    main()               
-
-
-
-
-
-
-
-
-
-
-
+    main()
