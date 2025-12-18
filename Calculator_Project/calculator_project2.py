@@ -85,7 +85,8 @@ def main():
                             print("\nThank you for using the calculator. Goodbye!")
                             break
                         else:
-                            print("Error: Invalid option! Please, select a number between 1-5.")
+                            print(
+                                "Error: Invalid option! Please, select a number between 1-5.")
                             
         except KeyboardInterrupt:
                         print("\n\nProgram interrupted. Goodbye!")
@@ -94,14 +95,4 @@ def main():
                             print(f"An unexpected error occured: {e}")
 if __name__ == "__main__":
     main()               
-
-
-
-
-
-
-
-
-
-
-
+    
