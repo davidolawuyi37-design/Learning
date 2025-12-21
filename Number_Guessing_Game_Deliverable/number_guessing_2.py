@@ -23,7 +23,7 @@ while True:
         Max_Number = 20
         break
     elif Level == "3":
-        Max_Number = 200
+        Max_Number = 50
         break
     else:
         print("Invalid Choice. Please choose 1, 2, or 3.")
@@ -53,6 +53,3 @@ while True:
     else:
         print(f"Congratulations! You guessed the number in {Attempts} Attempts.")
         break
-
-
-
