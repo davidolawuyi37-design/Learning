@@ -32,7 +32,7 @@ while True:
 Secret_Number = random.randint(1, Max_Number)
 Attempts = 0
 
-print(f"\nI have choosen a number between 1 and {Max_Number}.")
+print(f"\nYou have choosen a number between 1 and {Max_Number}.")
 print("Start Guessing!\n")
 
 # Game Loop
@@ -51,5 +51,6 @@ while True:
     elif Guess < Secret_Number:
         print("Too Low! Try again.\n")
     else:
-        print(f"Congratulations! You guessed the number in {Attempts} Attempts.")
+        print(
+            f"Congratulations! You guessed the number in {Attempts} Attempts.")
         break
