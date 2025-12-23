@@ -2,8 +2,8 @@ contacts = {}
 
 def add_contact():
     name = input("Enter name: ")
-    phone = input("Enter phone number: ")
-    contacts[phone] = name
+    number = input("Enter phone number: ")
+    contacts[name] = number
     print("✅ Contact added successfully\n")
 
 def view_contacts():
@@ -11,23 +11,23 @@ def view_contacts():
         print("📭 No contacts found\n")
     else:
         print("📞 Contact List:")
-        for phone, name in contacts.items():
-            print(f"Name: {name}, Phone: {phone}")
+        for name, number in contacts.items():
+            print(f"Name: {name}, Phone: {number}")
         print()
 
 def update_contact():
-    phone = input("Enter phone number to update: ")
-    if phone in contacts:
-        new_name = input("Enter new name: ")
-        contacts[phone] = new_name
+    name = input("Enter name to update: ")
+    if name in contacts:
+        new_number = input("Enter new phone number: ")
+        contacts[name] = new_number
         print("✏️ Contact updated successfully\n")
     else:
         print("❌ Contact not found\n")
 
 def delete_contact():
-    phone = input("Enter phone number to delete: ")
-    if phone in contacts:
-        del contacts[phone]
+    name = input("Enter name to delete: ")
+    if name in contacts:
+        del contacts[name]
         print("🗑️ Contact deleted successfully\n")
     else:
         print("❌ Contact not found\n")
