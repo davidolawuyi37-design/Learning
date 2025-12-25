@@ -54,3 +54,6 @@ while True:
         print(
             f"Congratulations! You guessed the number in {Attempts} Attempts.")
         break
+print("Thank you for playing the Number Guessing Game!")
+
+ 
