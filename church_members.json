@@ -1,0 +1,32 @@
+[
+    {
+        "name": "David",
+        "age": 15,
+        "contact": "08107667137",
+        "membership_date": "24 04-2010"
+    },
+    {
+        "name": "David",
+        "age": 13,
+        "contact": "0806506422",
+        "membership_date": "2"
+    },
+    {
+        "name": "david",
+        "age": 15,
+        "contact": "08107667137",
+        "membership_date": "24-04-2010"
+    },
+    {
+        "name": "David",
+        "age": 15,
+        "contact": "080",
+        "membership_date": "2000-12-12"
+    },
+    {
+        "name": "David",
+        "age": 15,
+        "contact": "082",
+        "membership_date": "2000-12-12"
+    }
+]

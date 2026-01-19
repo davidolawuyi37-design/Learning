@@ -8,7 +8,7 @@ import random
 print("Welcome To The Number Guessing Game!")
 
 # Difficulty Selection
-print("\nChoose A Difficulty Level:")
+print("\nChoose A Difficulty Level: ")
 print("1. Easy (1 - 10)")
 print("2. Medium (1 - 20)")
 print("3. Hard (1 - 50)")
