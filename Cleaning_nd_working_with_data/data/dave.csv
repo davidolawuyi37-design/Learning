@@ -1,16 +1,16 @@
                        Name          ,Age,Course                  ,Score
- David ,18,AI,85
-sarah,20,data science,
+david ,18,ai,85
+Sarah,20,data science,
 JOHN,,AI ,92
-Esther,21,Cybersecurity,69
+esther,21,Cybersecurity,69
 ,17,AI,88
 Grace,22,,90
-Daniel,18,Cybersecurity,
-Daniel,18   ,Cybersecurity,
+Ella,18,Cybersecurity,
+Ella,18   ,Cybersecurity,
  Ruth,,ai,81
 Michael,19,Data Science,76
 ANNA ,20,AI,89
-john,19,ai,91
+JOHN,19,ai,91
 Esther,21,CYBERSECURITY,69
 Samuel,,Data Science,84
 Rebecca,22,AI,
