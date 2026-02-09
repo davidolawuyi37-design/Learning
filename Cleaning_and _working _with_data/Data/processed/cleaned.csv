@@ -1,17 +1,17 @@
 Name,Age,Course,Score
-David,18,AI,85
-Sarah,20,Data Science,83
-John,20,AI,92
-Esther,21,Cybersecurity,69
-Unknown,17,AI,88
-Grace,22,Unknown,90
-Daniel,18,Cybersecurity,83
-Ruth,20,AI,81
+David,18,AI,20
+Sarah,20,Data Science,25
+John,20,AI,30
+Esther,21,Cybersecurity,35
+Unknown,17,AI,45
+Grace,22,Unknown,60
+Daniel,18,Cybersecurity,65
+Ruth,20,AI,70
 Michael,19,Data Science,76
-Anna,20,AI,89
+Anna,20,AI,80
 John,19,AI,91
-Samuel,20,Data Science,84
-Rebecca,22,AI,83
+Samuel,20,Data Science,87
+Rebecca,22,AI,90
 Paul,23,Cybersecurity,78
 Mary,21,Data Science,82
 Peter,20,AI,90
