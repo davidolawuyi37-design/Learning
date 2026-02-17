@@ -1,0 +1,11 @@
+Customer,Age,Product,Category,Amount,City
+ John ,25,Laptop,Electronics,120000,Lagos
+mary,22,Phone, electronics,85000,Abuja
+PAUL,30,Tablet,Electronics,,Ibadan
+,28,Laptop,Electronics,110000,Lagos
+Grace,24,Headset,accessories,15000,Onitsha
+Daniel,35,Phone,Electronics,90000,Abuja
+Ruth ,27,Laptop, electronics,125000,Lagos
+Samuel,29,Tablet,Electronics,78000,Ibadan
+Mary,22,Phone,Electronics,85000,Abuja
+Peter,31,Headset,Accessories,18000,Enugu
